@@ -1,10 +1,25 @@
-.scrollYBan{
+/* .scrollYBan{
   overflow-y: hidden;
 }
 .scrollXBan{
   overflow-x: hidden;
-}
+} */
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 10px;
   height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+  box-shadow: 0 0 5px #82BA82 inset;
+  opacity: 0;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #82BA82, #488548);
+  border-radius: 12px;
+  border: 2px solid #82BA82;
+  transition-duration: 2s;
+}
+::-webkit-scrollbar-thumb:hover{
+  border: 1px solid #82BA82;
 }

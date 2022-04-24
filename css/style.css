@@ -207,7 +207,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--colorBlock4);
+  background-color: #5c5c73;
   color: white;
   font-family: Arial;
   font-size: 22px;
@@ -224,7 +224,7 @@ body{
   box-shadow: 0px 0px 3px black;
 }
 .butIsActived{
-  background-color: #5c5c73;
+  background-color: var(--colorBlock4);
   box-shadow: 2px 2px 3px #82BA82;
 }
 .textStyle p{
@@ -287,6 +287,28 @@ body{
   letter-spacing: 2px;
   color: black;
   padding: 20px;
+}
+.text5_effect{
+  position: absolute;
+  height: 40px;
+  width: 100%;
+  bottom: 0px;
+  transition-duration: 1s;
+  background: linear-gradient(to top, white, rgba(255, 255, 255, 0.6),rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.0));
+}
+.text5_effect:hover{
+  opacity: 0;
+}
+.text5_effect1{
+  position: absolute;
+  height: 30px;
+  width: 100%;
+  top: 0px;
+  transition-duration: 1s;
+  background: linear-gradient(to bottom, white, rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.0));
+}
+.text5_effect1:hover{
+  opacity: 0;
 }
 .wrapper_main_text5 p {
   opacity: 1;
@@ -486,7 +508,7 @@ body{
     font-size: 18px;
   }
 }
-@media (max-width:740px) {
+@media (max-width:740px) and (orientation: portrait) {
   .main_conteiner{
     width: 450px;
   }

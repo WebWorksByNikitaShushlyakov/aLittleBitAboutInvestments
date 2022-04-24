@@ -7,11 +7,10 @@
 }
 .backToThemain{
   position: fixed;
-  width: 80px;
-  height: 80px;
-  top: 100px;
-  right: 10%;
-  border-radius: 50%;
+  right: 0px;
+  top: 20px;
+  height: 60px;
+  width: 200px;
   z-index: 20;
   opacity: 0.5;
   background-color: rgba(38, 41, 53, 0.9);
@@ -21,6 +20,17 @@
   animation-delay: 6s;
   animation-iteration-count: 3;
   animation-direction: alternate;
+  border-radius: 20px;
+  box-shadow: 1px 1px 3px #82BA82;
+}
+.bodyForBack{
+  position: fixed;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: auto;
+  z-index: 20;
 }
 @keyframes backTo {
   0%{box-shadow: 0 0 0 #82BA82;}
@@ -34,7 +44,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  object-fit: cover;
+  object-fit: scale-down;
 }
 .backToThemain:hover{
   opacity: 0.8;
@@ -54,7 +64,7 @@
   top: 20px;
   height: 60px;
   width: 300px;
-  background-color: rgba(38, 41, 53, 0.7);
+  background-color: rgba(38, 41, 53, 0.9);
   text-shadow: 1px 1px 1px rgba(38, 41, 53, 0.7);
   border-radius: 20px;
   color: white;
@@ -65,10 +75,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   box-shadow: 1px 1px 3px #82BA82;
-}
-.title_realInvest{
-  width: 100%;
 }
 .text{
   position: relative;
@@ -77,7 +85,7 @@
   top: 5%;
   min-width: 300px;
   height: auto;
-  background-color: rgba(38, 41, 53, 0.7);
+  background-color: rgba(38, 41, 53, 0.9);
   font-size: 16px;
   letter-spacing: 2px;
   line-height: 18px;
